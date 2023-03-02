@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  /* max-width: 1250px; */
+  margin-inline: 2rem;
+  background-color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* FARVER */
+html {
+  --primary-color: #dcb3cc;
+  --secondary-color: #1a1fb9;
+}
+
+h1,
+#menu a,
+p {
+  color: white;
+}
+
+/* FONTS */
+
+h1 {
+  /* font-family: "bebas-neue", sans-serif; */
+  font-family: "apparat-cond", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "apparat-cond", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: black;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15%;
+  padding-top: 8%;
+}
+
+header p {
+  font-size: 15px;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+}
+
+#menu a {
+  text-decoration: none;
+  font-family: "bebas-neue", sans-serif;
+  font-size: 20px;
+}
+
+#menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+#myLogo {
+  text-align: start;
+  font-size: 25px;
+  font-family: "bebas-neue", sans-serif;
+}
+
+/* MAIN */
+/* #container_fp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+#col_1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+#col_2 p {
+  font-family: "apparat-cond", sans-serif;
+  font-size: 35px;
+}
+
+#col_2 {
+  text-align: center;
+  display: grid;
+  place-self: center;
+}
+
+/* RESPONSIVE */

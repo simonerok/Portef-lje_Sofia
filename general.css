@@ -1,0 +1,142 @@
+/* GENERELT */
+body {
+  background-color: white;
+  margin: 0px;
+}
+
+/* FONTS */
+p {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+ul {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* BUTTONS */
+.btn_container {
+  text-align: center;
+  padding: 5%;
+}
+button {
+  margin-top: 8%;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "apparat-cond", sans-serif;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* TEXT */
+h1,
+#menu a,
+p {
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 6%;
+  font-size: 35px;
+}
+
+h2 {
+  padding-bottom: 8%;
+}
+
+#myLogo {
+  padding: 0%;
+}
+
+/* HEADER */
+header {
+  border-bottom: 1px solid black;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin-bottom: 12%;
+}
+
+/* MAIN */
+main {
+  margin: 0 auto;
+}
+
+section {
+  margin: 8%;
+}
+
+/* PORTFOLIO SITE STYLING */
+#section_2,
+#section_4 {
+  background-color: var(--primary-color);
+  padding-top: 10%;
+}
+
+#game_img {
+  padding-top: 10%;
+}
+
+/* VIDEO */
+video {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  padding-block: 8%;
+}
+
+/* CREATIVE PROJECTS SITE */
+#creative_projects p {
+  padding-bottom: 10%;
+}
+
+#HB p {
+  padding-bottom: 10%;
+}
+
+/* CV SITE */
+
+#main_cv {
+  margin-inline: 10%;
+}
+
+/* ICON SECTION */
+svg {
+  margin: 0px;
+  background-size: cover;
+}
+
+#icon_and_text {
+  display: flex;
+}
+
+#icon_and_text h1 {
+  font-size: 20px;
+  padding: 0px;
+  display: grid;
+  align-self: baseline;
+  padding-top: 10%;
+}
+
+#underline {
+  border-top: 2px solid black;
+}
+
+/* PERSONAL INFO  */
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#personal_info ul {
+  padding-block: 8%;
+}
+
+ul li {
+  line-height: 27px;
+}
