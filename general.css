@@ -4,6 +4,11 @@ body {
   margin: 0px;
 }
 
+img {
+  width: 80%;
+  height: auto;
+}
+
 /* FONTS */
 p {
   font-family: Georgia, "Times New Roman", serif;
@@ -16,8 +21,9 @@ ul {
 /* BUTTONS */
 .btn_container {
   text-align: center;
-  padding: 5%;
+  padding-bottom: 5%;
 }
+
 button {
   margin-top: 8%;
   cursor: pointer;
@@ -32,7 +38,7 @@ button {
 
 /* TEXT */
 h1,
-#menu a,
+.menu a,
 p {
   color: black;
   text-align: center;
@@ -47,8 +53,14 @@ h2 {
   padding-bottom: 8%;
 }
 
-#myLogo {
+.my_logo {
   padding: 0%;
+  text-decoration: none;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -56,22 +68,35 @@ header {
   border-bottom: 1px solid black;
   padding-top: 5%;
   padding-bottom: 10%;
+  padding-inline: 8%;
   margin-bottom: 12%;
+}
+
+.header_logo {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* MAIN */
 main {
   margin: 0 auto;
-}
-
-section {
-  margin: 8%;
+  max-width: 1250px;
 }
 
 /* PORTFOLIO SITE STYLING */
-#section_2,
-#section_4 {
-  background-color: var(--primary-color);
+#section_2 {
+  padding-top: 10%;
+}
+
+section {
+  margin-block: 15%;
+}
+
+figure {
+  text-align: center;
+}
+
+#redesign_img {
   padding-top: 10%;
 }
 
@@ -81,13 +106,12 @@ section {
 
 /* VIDEO */
 video {
-  padding: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 80%;
   height: auto;
-  padding-block: 8%;
+  padding-top: 8%;
 }
 
 /* CREATIVE PROJECTS SITE */
@@ -102,41 +126,148 @@ video {
 /* CV SITE */
 
 #main_cv {
-  margin-inline: 10%;
+  padding-inline: 10%;
+}
+
+section p {
+  padding-inline: 10%;
 }
 
 /* ICON SECTION */
 svg {
   margin: 0px;
   background-size: cover;
+  align-items: last baseline;
 }
 
-#icon_and_text {
+.icon_and_text {
   display: flex;
+  align-items: last baseline;
 }
 
-#icon_and_text h1 {
-  font-size: 20px;
+.icon_and_text h1 {
+  font-family: "bebas-neue", sans-serif;
+  font-size: 25px;
   padding: 0px;
-  display: grid;
-  align-self: baseline;
-  padding-top: 10%;
+  padding-left: 5%;
 }
 
-#underline {
+.underline {
   border-top: 2px solid black;
+  padding-bottom: 10%;
 }
 
 /* PERSONAL INFO  */
 ul {
   list-style-type: none;
   padding: 0px;
+  padding-right: 8%;
 }
 
-#personal_info ul {
-  padding-block: 8%;
+#personal_info {
+  padding: 0px;
 }
 
 ul li {
   line-height: 27px;
 }
+
+/* JOB */
+.left_text {
+  text-align: left;
+}
+
+/* SKILLS  */
+#skill_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#skills_text {
+  font-family: "bebas-neue", sans-serif;
+  font-size: 25px;
+}
+
+#skills_text li {
+  line-height: 40px;
+}
+
+.skills {
+  padding: 0%;
+}
+
+#skill_level {
+  width: 100px;
+  height: auto;
+}
+
+article {
+  padding-top: 10%;
+}
+
+/* EDUCATION BOLD */
+.bold {
+  font-weight: bold;
+}
+
+/* SKILL BAR DOTS */
+.dot-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
+.blue {
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.space {
+  padding-block: 10px;
+}
+#all_the_dots {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dot_article {
+  padding-block: 5%;
+  align-self: flex-start;
+}
+
+#education {
+  padding-bottom: 8%;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+footer h1 {
+  font-size: 20px;
+}
+
+.footerp {
+  padding-block: 10px;
+  font-style: italic;
+}
+
+.contact {
+  padding-top: 5%;
+}
+
+.contact_text {
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* DESKTOP */
