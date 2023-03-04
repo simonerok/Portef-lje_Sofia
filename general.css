@@ -1,6 +1,6 @@
 /* GENERELT */
 body {
-  background-color: var(--primary-color);
+
   margin: 0px;
 }
 
@@ -11,7 +11,7 @@ img {
 }
 
 .section_border {
- border-bottom: 2px solid white;
+ border-bottom: 2px solid rgb(0, 0, 0);
  width: 65%;
 margin: 0 auto;
 padding-bottom:5%;
@@ -20,7 +20,7 @@ padding-bottom:5%;
 /* FARVER */
 html {
   --primary-color: #dcb3cc;
-  --secondary-color: #1a1fb9;
+ 
 }
 
 /* FONTS */
@@ -63,19 +63,19 @@ button {
   border-radius: 8px;
   padding: 14px 24px;
   border: none;
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
 }
 
 /* TEXT */
 h1,h2,
 .menu a,
 p {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 li{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -83,10 +83,10 @@ h1 {
 }
 
 
-
 .my_logo {
   padding: 0%;
   text-decoration: none;
+  color: var(--primary-color);
 }
 
 a {
@@ -103,7 +103,7 @@ header {
   padding-bottom: 10%;
   padding-inline: 8%;
   margin-bottom: 10%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 header p {
@@ -119,6 +119,7 @@ header p {
   text-decoration: none;
   font-family: "bebas-neue", sans-serif;
   font-size: 15px;
+  color: var(--primary-color);
 }
 
 .menu ul {
@@ -126,6 +127,7 @@ header p {
   display: flex;
   gap: 15px;
   margin:0px;
+ 
 }
 
 .my_logo {
@@ -151,9 +153,8 @@ main {
 
 /* PORTFOLIO SITE STYLING */
 
-
 section {
-  margin-block: 15%;
+  margin-top: 10%;
 }
 
 figure {
@@ -196,18 +197,24 @@ padding-inline: 10%
 
 section p {
   padding-inline: 10%;
+  padding-top: 5%;
 }
 
 /* ICON SECTION */
+
+
+#info p{
+ text-align: left;
+}
+
 svg {
   margin: 0px;
   background-size: cover;
-  align-items: last baseline;
 }
 
 .icon_and_text {
   display: flex;
-  align-items: last baseline;
+ 
 }
 
 .icon_and_text h1 {
@@ -215,14 +222,27 @@ svg {
   font-size: 25px;
   padding: 0px;
   padding-left: 5%;
+  color: var(--primary-color);
 }
 
 .underline {
-  border-top: 2px solid rgb(255, 255, 255);
-  padding-bottom: 10%;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
+/* IMG CV  */
+#pb_cv{
+ border: 1px solid black;
+ margin-bottom: 10%;
+}
+
+.hide{
+ display:none;
+ }
+
 /* PERSONAL INFO  */
+
+
+
 ul {
   list-style-type: none;
   padding: 0px;
@@ -246,6 +266,7 @@ ul li {
 #skill_container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 8%;
 }
 
 #skills_text {
@@ -292,8 +313,8 @@ article {
   margin-right: 5px;
 }
 
-.blue {
-  background-color: var(--secondary-color);
+.pink {
+  background-color: var(--primary-color);
   border: none;
 }
 
@@ -317,7 +338,7 @@ article {
 /* FOOTER */
 footer {
   text-align: center;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--primary-color);
 }
 footer p {
   padding:0px;
@@ -326,11 +347,13 @@ footer p {
 
 footer h1 {
   font-size: 20px;
+  color: var(--primary-color);
 }
 
 .footerp {
   padding-block: 10px;
   font-style: italic;
+  color: var(--primary-color);
 }
 
 .contact {
@@ -341,8 +364,107 @@ footer h1 {
 .contact_text {
   font-style: normal;
   font-weight: bold;
+
+}
+
+.contact_text p {
+  color: var(--primary-color);
 }
 
 /* TABLET */
+@media (min-width: 700px) {
+   
+  /* HEADER */
+header .my_logo{
+  font-size: 30px;
+}
+
+.menu a{
+  font-size: 20px;
+}
+
+header {
+  padding: 5%;
+}
+
+  /* MAIN */
+
+  #main_cv{
+    padding: 0px;
+    margin: 0px;
+   }
+
+  section p {
+    padding-top: 0px;
+    font-size: 20px;
+  }
+
+  #CV{
+   text-align: center;
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin:0 auto;
+  }
+
+
+/* GRID */
+
+/* 1 section */
+.icon_article{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ }
+
+.hide{
+  display: block;
+  width: 75%;
+ }
+
+/* 2 section */
+ .grid_col{
+  padding: 15%;
+  padding-top: 0px;
+ }
+
+ #work_exp{
+  padding-top: 6%;
+ }
+
+ /*  section 2 background */
+ #job_and_work{
+  background-color: var(--primary-color);
+  padding-block: 10%;
+ }
+
+ #white_icon{
+position: absolute;
+ }
+
+ #work_exp, #white_text{
+  color: white;
+   }
+
+.white_text{
+  color: white;
+   }
+   .underline_white{
+    border-bottom: 2px solid white;
+     }
+
+      }
 
 /* DESKTOP */
+@media (min-width: 1250px) {
+  
+  /* HEADER */
+header {
+margin-bottom: 8%;
+}
+
+
+ /* FOOTER */
+ .contact {
+  padding: 3%;
+  }
+
+}

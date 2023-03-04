@@ -15,7 +15,7 @@ img {
 /* FARVER */
 html {
   --primary-color: #dcb3cc;
-  --secondary-color: #1a1fb9;
+ 
 }
 
 h1,
@@ -207,8 +207,6 @@ footer h1 {
       } 
 
 
-
-     
 
  /* DESKTOP */
  @media (min-width: 1250px) {
