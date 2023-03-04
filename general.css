@@ -317,7 +317,11 @@ article {
 /* FOOTER */
 footer {
   text-align: center;
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid white;
+}
+footer p {
+  padding:0px;
+  margin: 0px;
 }
 
 footer h1 {
@@ -330,7 +334,8 @@ footer h1 {
 }
 
 .contact {
-  padding-top: 5%;
+  padding-block: 6%;
+ 
 }
 
 .contact_text {
