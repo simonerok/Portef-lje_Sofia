@@ -140,3 +140,24 @@ footer h1 {
   font-style: normal;
   font-weight: bold;
 }
+
+/* TABLET */
+@media (min-width: 700px) {
+  header{
+    padding: 5%;
+  border:none;
+
+   } 
+
+  #container_fp{
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  
+   } 
+
+   
+
+ }
+ 
+ /* DESKTOP */
+ 
