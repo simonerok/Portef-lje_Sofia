@@ -15,7 +15,6 @@ img {
 /* FARVER */
 html {
   --primary-color: #dcb3cc;
- 
 }
 
 h1,
@@ -132,7 +131,7 @@ footer h1 {
 }
 
 .contact {
- padding-block: 6%;
+  padding-block: 6%;
 }
 
 .contact_text {
@@ -140,105 +139,104 @@ footer h1 {
   font-weight: bold;
 }
 
+.svg_linkedIn img {
+  max-width: 45px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 20%;
+}
+
 /* TABLET */
 @media (min-width: 700px) {
-  
-/* HEADER */
- header{
-    border:none;
+  /* HEADER */
+  header {
+    border: none;
     display: grid;
-    grid-template-columns: 1fr 1.5fr ;
-    margin:0px;
-    padding:0px;
-     } 
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0px;
+    padding: 0px;
+  }
 
-#container_fp{
-  display: grid;
-  grid-template-columns: 1fr 1.5fr ;
-   } 
+  #container_fp {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
 
-   /* WHITE */
-   .header_logo{
+  /* WHITE */
+  .header_logo {
     background-color: white;
-  
-     } 
-   
+  }
+
   .my_logo {
     color: var(--primary-color);
     padding: 6% 0px 0px 10%;
-      } 
-   
+  }
+
   .logo_text {
-      color: var(--primary-color);
-      padding: 0px 0px 10% 10%;
-       } 
-       
-#col_1{
-  background-color: white;
-  padding-bottom: 20%;
-   } 
+    color: var(--primary-color);
+    padding: 0px 0px 10% 10%;
+  }
 
-   #img_fp{
+  #col_1 {
+    background-color: white;
+    padding-bottom: 20%;
+  }
+
+  #img_fp {
     width: 70%;
-     } 
- /* COLOR SIDE */
-.menu {
-  justify-content: end;
-  padding: 5%;
-  padding-inline: 10%;
-   } 
+  }
+  /* COLOR SIDE */
+  .menu {
+    justify-content: end;
+    padding: 5%;
+    padding-inline: 10%;
+  }
 
-  .menu a{
+  .menu a {
     font-size: 20px;
-     } 
+  }
 
-#col_2{
- display: grid;
- place-self: center;
- padding-inline: 9%;
-   } 
+  #col_2 {
+    display: grid;
+    place-self: center;
+    padding-inline: 9%;
+  }
 
   /*FOOTER */
-.contact{
-  padding: 3%;
-  margin: 0px;
-    } 
+  .contact {
+    padding: 3%;
+    margin: 0px;
+  }
+}
 
-      } 
-
-
-
- /* DESKTOP */
- @media (min-width: 1250px) {
-  main{
+/* DESKTOP */
+@media (min-width: 1250px) {
+  main {
     max-width: none;
-      } 
+  }
 
-/* HEADER */
-.header_logo h1 {
-  font-size: 40px;
-  padding: 6% 0px 0px 15%;
-    } 
- 
-.logo_text {
-  font-size: 20px;
+  /* HEADER */
+  .header_logo h1 {
+    font-size: 40px;
+    padding: 6% 0px 0px 15%;
+  }
+
+  .logo_text {
+    font-size: 20px;
     padding: 0px 0px 10% 15%;
-     } 
+  }
 
-     /* COLORSIDE */
+  /* COLORSIDE */
 
-.menu a {
-  font-size: 25px;
+  .menu a {
+    font-size: 25px;
     padding: 0px 0px 10% 10%;
-     }
+  }
 
- #col_2 p {
-      font-size: 50px;
-       
-         }
-         #img_fp{
-          width: 60%;
-           } 
-
-    } 
-
+  #col_2 p {
+    font-size: 50px;
+  }
+  #img_fp {
+    width: 60%;
+  }
+}
