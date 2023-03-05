@@ -255,6 +255,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   padding-bottom: 8%;
+  padding-top: 8%;
 }
 
 #skills_text {
@@ -387,6 +388,11 @@ footer h1 {
   section p {
     padding-top: 0px;
     font-size: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+    font-size: 35px;
   }
 
   #CV {
@@ -567,6 +573,13 @@ footer h1 {
   .left_text {
     font-size: 20px;
   }
+
+/* FOOTER */
+.contact {
+  padding: 20px;
+  font-size: 35px;
+}
+
   /**************** CV SITE **********************/
   /* HEADER */
   header {
@@ -599,11 +612,18 @@ footer h1 {
     padding-block: 5%;
   }
 
-  /* FOOTER */
-  .contact {
-    padding: 3%;
-    font-size: 35px;
+   #work_exp {
+    padding-top: 5%;
   }
+
+  #skill_container {
+    padding-top: 5%;
+  }
+
+  
+ 
+
+
 
   /**************** PORTFOLIO SITE **********************/
 
