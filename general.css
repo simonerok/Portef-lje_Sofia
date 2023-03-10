@@ -53,14 +53,26 @@ ul {
 button {
   margin: 3%;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "apparat-cond", sans-serif;
   border-radius: 8px;
   padding: 14px 24px;
   border: none;
+  color: var(--primary-color);
+  background-color: white;
+  border: 2px solid var(--primary-color);
+}
+
+button:hover {
+  border: none;
   background-color: var(--primary-color);
   color: rgb(255, 255, 255);
+  border-radius: 9px;
+  padding: 16px 26px;
+  box-shadow: 3px 3px 10px #473443,
+      -2px 1px 10px #af6ea5;
 }
+
 
 /* TEXT */
 h1,
@@ -99,6 +111,8 @@ header {
   padding-inline: 8%;
   margin-bottom: 10%;
   border-bottom: 1px solid var(--primary-color);
+
+
 }
 
 header p {
@@ -112,8 +126,17 @@ header p {
 .menu a {
   text-decoration: none;
   font-family: "bebas-neue", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--primary-color);
+}
+
+.menu a:hover {
+
+  color: #fff;
+
+  text-shadow: 3px 3px 10px #b96c93,
+      -2px 1px 10px #985074;
+
 }
 
 .menu ul {
@@ -161,6 +184,17 @@ figure {
 #game_img {
   padding-top: 5%;
 }
+
+.section_color {
+  background-color: var(--primary-color);
+  padding: 5%;
+}
+.section_color h1 {
+color:white;
+}
+.section_color p {
+  color:white;
+  }
 
 /* VIDEO */
 video {
@@ -366,16 +400,20 @@ footer h1 {
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
   /* HEADER */
+
+
   header .my_logo {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .menu a {
-    font-size: 20px;
+    font-size: 30px;
+    
   }
 
   header {
     padding: 5%;
+    
   }
 
   /* MAIN */
@@ -452,10 +490,7 @@ footer h1 {
   }
 
   /**************** PORTFOLIO SITE **********************/
-  .section_color {
-    background-color: var(--primary-color);
-    padding: 5%;
-  }
+
 }
 
 @media (min-width: 800px) {
@@ -528,7 +563,7 @@ footer h1 {
   }
 
   #HB p {
-    color: #dcb3cc;
+   
     padding-block: 2%;
   }
   #HB h2 {
@@ -548,18 +583,26 @@ footer h1 {
 /* DESKTOP */
 @media (min-width: 1250px) {
   header .my_logo {
-    font-size: 45px;
+    font-size: 55px;
   }
   .menu a {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   p {
     margin-inline: 10%;
   }
 
+  .left_text{
+    margin-inline: 0%;
+  }
+
   img {
-    max-width: 80%;
+    max-width: 100%;
+  }
+
+  figure {
+    max-width: 90%;
   }
 
   main {
@@ -572,6 +615,12 @@ footer h1 {
 
   .left_text {
     font-size: 20px;
+  }
+  
+
+  button{
+    font-size: 25px;
+    padding: 20px 30px;
   }
 
 /* FOOTER */
@@ -620,10 +669,6 @@ footer h1 {
     padding-top: 5%;
   }
 
-  
- 
-
-
 
   /**************** PORTFOLIO SITE **********************/
 
@@ -644,4 +689,6 @@ footer h1 {
   .hb_img {
     padding-inline: 20px;
   }
+ 
+
 }
