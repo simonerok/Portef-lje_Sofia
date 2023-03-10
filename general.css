@@ -393,13 +393,16 @@ footer h1 {
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
   /* HEADER */
+  main {
+    max-width: none;
+  }
 
   header .my_logo {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .menu a {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   header {
