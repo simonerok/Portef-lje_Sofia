@@ -398,11 +398,11 @@ footer h1 {
   }
 
   header .my_logo {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .menu a {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   header {
@@ -487,92 +487,30 @@ footer h1 {
 
 @media (min-width: 800px) {
   /**************** CREATIVE PROJECTS TABLET**********************/
-  main {
-    max-width: none;
-  }
-
-  #place_h1 {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-    padding-inline: 36%;
-    padding-top: 3%;
-    color: white;
-    text-align: center;
-  }
-  #place_text {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-    padding-block: 8%;
-    color: white;
-  }
-
-  .no_space {
-    margin-bottom: 0px;
-  }
-
-  #creative_projects {
-    padding: 0px;
-    margin: 0px;
+  #drawings_container img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 26/23;
+    object-fit: cover;
   }
 
   #drawings_container {
-    position: relative;
-    top: 0;
-    left: 0;
-    padding-bottom: 10%;
-    flex-wrap: wrap;
-  }
-
-  #background_img {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-
-  #child_1 {
-    position: absolute;
-    z-index: 1;
-    width: 35%;
-    right: 16px;
-    padding: 3%;
-    bottom: -8%;
-  }
-
-  #child_2 {
-    position: absolute;
-    z-index: 1;
-    width: 35%;
-    bottom: -8%;
-    left: 16px;
-    padding: 3%;
-  }
-
-  #HB {
-    padding: 0px;
-    margin: 0px;
-    padding-top: 15%;
-    padding-bottom: 8%;
-  }
-
-  #HB p {
-    padding-block: 2%;
-  }
-  #HB h2 {
-    color: #dcb3cc;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding-bottom: 5%;
   }
 
   #hb_container {
-    /*  flex-wrap: wrap; */
-    display: flex;
-    margin-inline: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-bottom: 5%;
   }
 
-  .hb_img {
-    padding-inline: 10px;
+  #hb_container img {
+    aspect-ratio: 9/10;
   }
 }
 
@@ -667,20 +605,4 @@ footer h1 {
   /**************** PORTFOLIO SITE **********************/
 
   /**************** CREATIVE SITE **********************/
-  #place_h1 {
-    padding-inline: 41%;
-    padding-top: 3%;
-  }
-
-  #HB {
-    padding-bottom: 5%;
-  }
-
-  #hb_container {
-    padding-top: 20px;
-    margin-inline: 5%;
-  }
-  .hb_img {
-    padding-inline: 20px;
-  }
 }
