@@ -23,6 +23,16 @@ p {
   color: white;
 }
 
+.menu a {
+  font-size: 22px;
+}
+
+.menu a:hover {
+  color: #fff;
+
+  text-shadow: 3px 3px 10px #b96c93, -2px 1px 10px #985074;
+}
+
 /* FONTS */
 h1 {
   font-family: "bebas-neue", sans-serif;
@@ -165,7 +175,6 @@ footer h1 {
   /* WHITE */
   .header_logo {
     background-color: white;
-     
   }
 
   .my_logo {
@@ -236,7 +245,6 @@ footer h1 {
     font-size: 35px;
   }
 
-
   /* COLORSIDE */
 
   .menu a {
@@ -251,8 +259,8 @@ footer h1 {
     width: 60%;
   }
 
-   /*FOOTER */
-   .contact {
+  /*FOOTER */
+  .contact {
     padding: 20px;
     margin: 0px;
     font-size: 30px;

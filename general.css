@@ -69,10 +69,8 @@ button:hover {
   color: rgb(255, 255, 255);
   border-radius: 9px;
   padding: 16px 26px;
-  box-shadow: 3px 3px 10px #473443,
-      -2px 1px 10px #af6ea5;
+  box-shadow: 3px 3px 10px #473443, -2px 1px 10px #af6ea5;
 }
-
 
 /* TEXT */
 h1,
@@ -111,8 +109,6 @@ header {
   padding-inline: 8%;
   margin-bottom: 10%;
   border-bottom: 1px solid var(--primary-color);
-
-
 }
 
 header p {
@@ -126,17 +122,14 @@ header p {
 .menu a {
   text-decoration: none;
   font-family: "bebas-neue", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   color: var(--primary-color);
 }
 
 .menu a:hover {
-
   color: #fff;
 
-  text-shadow: 3px 3px 10px #b96c93,
-      -2px 1px 10px #985074;
-
+  text-shadow: 3px 3px 10px #b96c93, -2px 1px 10px #985074;
 }
 
 .menu ul {
@@ -148,7 +141,7 @@ header p {
 
 .my_logo {
   text-align: start;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "bebas-neue", sans-serif;
 }
 
@@ -190,11 +183,11 @@ figure {
   padding: 5%;
 }
 .section_color h1 {
-color:white;
+  color: white;
 }
 .section_color p {
-  color:white;
-  }
+  color: white;
+}
 
 /* VIDEO */
 video {
@@ -401,19 +394,16 @@ footer h1 {
   /**************** CV SITE **********************/
   /* HEADER */
 
-
   header .my_logo {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .menu a {
     font-size: 30px;
-    
   }
 
   header {
     padding: 5%;
-    
   }
 
   /* MAIN */
@@ -490,11 +480,13 @@ footer h1 {
   }
 
   /**************** PORTFOLIO SITE **********************/
-
 }
 
 @media (min-width: 800px) {
   /**************** CREATIVE PROJECTS TABLET**********************/
+  main {
+    max-width: none;
+  }
 
   #place_h1 {
     position: absolute;
@@ -563,7 +555,6 @@ footer h1 {
   }
 
   #HB p {
-   
     padding-block: 2%;
   }
   #HB h2 {
@@ -593,7 +584,7 @@ footer h1 {
     margin-inline: 10%;
   }
 
-  .left_text{
+  .left_text {
     margin-inline: 0%;
   }
 
@@ -616,18 +607,17 @@ footer h1 {
   .left_text {
     font-size: 20px;
   }
-  
 
-  button{
+  button {
     font-size: 25px;
     padding: 20px 30px;
   }
 
-/* FOOTER */
-.contact {
-  padding: 20px;
-  font-size: 35px;
-}
+  /* FOOTER */
+  .contact {
+    padding: 20px;
+    font-size: 35px;
+  }
 
   /**************** CV SITE **********************/
   /* HEADER */
@@ -661,14 +651,13 @@ footer h1 {
     padding-block: 5%;
   }
 
-   #work_exp {
+  #work_exp {
     padding-top: 5%;
   }
 
   #skill_container {
     padding-top: 5%;
   }
-
 
   /**************** PORTFOLIO SITE **********************/
 
@@ -689,6 +678,4 @@ footer h1 {
   .hb_img {
     padding-inline: 20px;
   }
- 
-
 }
