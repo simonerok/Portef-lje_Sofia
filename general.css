@@ -521,6 +521,7 @@ footer h1 {
     top: 0;
     left: 0;
     padding-bottom: 10%;
+    flex-wrap: wrap;
   }
 
   #background_img {
@@ -562,6 +563,7 @@ footer h1 {
   }
 
   #hb_container {
+    /*  flex-wrap: wrap; */
     display: flex;
     margin-inline: 10px;
   }
