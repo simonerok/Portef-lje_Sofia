@@ -243,12 +243,6 @@ a:hover {
 
 /* fjern lilla skrift fra links??? */
 
-.my_logo {
-  text-align: start;
-  font-size: 35px;
-  font-family: "bebas-neue", sans-serif;
-}
-
 .header_logo h1 {
   font-size: 1.3rem;
   margin: 0px;
