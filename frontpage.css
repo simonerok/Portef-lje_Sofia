@@ -227,6 +227,7 @@ footer {
   #col_1 {
     background-color: white;
     padding-bottom: 20%;
+    padding-top: 10%;
   }
 
   #img_fp {
@@ -261,24 +262,32 @@ footer {
   }
 
   /* HEADER */
+  .header_logo h1 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+    padding-inline: 20%;
+    padding-block: 10%;
+  }
 
-  .logo_text {
-    font-size: 23px;
-    padding: 0px 0px 10% 15%;
+  /* WHITE */
+
+  #col_1 {
+    padding: 0px;
   }
 
   /* COLORSIDE */
-
   .menu a {
-    font-size: 25px;
-    padding: 0px 0px 10% 10%;
+    font-size: 2rem;
   }
 
   #col_2 p {
     font-size: 50px;
+    width: 80%;
   }
   #img_fp {
     width: 60%;
+    padding-bottom: 4rem;
   }
 
   /*FOOTER */
