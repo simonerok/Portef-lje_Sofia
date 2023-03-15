@@ -616,6 +616,10 @@ footer h3 {
   #hb_container img {
     aspect-ratio: 9/10;
   }
+
+  .place_text {
+    padding-bottom: 2rem;
+  }
 }
 
 /* DESKTOP */
@@ -729,4 +733,8 @@ footer h3 {
   }
 
   /**************** CREATIVE SITE **********************/
+
+  .place_text {
+    padding-bottom: 3rem;
+  }
 }
