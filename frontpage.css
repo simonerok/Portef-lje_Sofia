@@ -189,8 +189,8 @@ footer {
     border: none;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
   }
 
   #container_fp {
@@ -198,8 +198,21 @@ footer {
     grid-template-columns: 1fr 1.5fr;
   }
 
-  .my_logo h1 {
-    font-size: 1.75rem;
+  /* Fonts */
+  .header_logo h1 {
+    font-size: 2.15rem;
+    letter-spacing: 1px;
+    padding: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: var(--font-paragraph);
+    line-height: 1.7;
   }
 
   /* WHITE */
@@ -209,12 +222,6 @@ footer {
 
   .my_logo {
     color: var(--primary-color);
-  }
-
-  .logo_text {
-    color: var(--primary-color);
-    padding: 0px 0px 10% 10%;
-    font-size: 23px;
   }
 
   #col_1 {
@@ -228,25 +235,22 @@ footer {
   /* COLOR SIDE */
   .menu {
     justify-content: end;
-    padding: 5%;
     padding-inline: 10%;
   }
 
   .menu a {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   #col_2 {
     display: grid;
     place-self: center;
-    padding-inline: 9%;
   }
 
   /*FOOTER */
   .contact {
     padding: 20px;
     margin: 0px;
-    font-size: 30px;
   }
 }
 
