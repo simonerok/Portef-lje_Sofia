@@ -13,35 +13,59 @@ img {
   border-bottom: 2px solid rgb(0, 0, 0);
   width: 65%;
   margin: 0 auto;
-  padding-bottom: 5%;
 }
 
 /* FARVER */
 html {
   --primary-color: #dcb3cc;
+  --secondary-color: rgb(48, 48, 48);
 }
 
 /* FONTS */
+html {
+  --font-display: "bebas-neue", sans-serif;
+  --font-paragraph: "montserat", sans-serif;
+}
 
-h1 {
-  font-family: "bebas-neue", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 0px;
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: normal;
+  padding-block: 1rem;
   margin: 0px;
 }
 
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
 h2 {
-  font-family: "bebas-neue", sans-serif;
-  text-align: center;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-family: var(--font-paragraph);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 p {
-  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-family: var(--font-paragraph);
+  line-height: 1.7;
 }
 
-ul {
-  font-family: Georgia, "Times New Roman", serif;
+ul li {
+  font-family: var(--font-paragraph);
+  font-size: 1rem;
 }
 
 /* BUTTONS */
@@ -51,30 +75,56 @@ ul {
 }
 
 button {
-  margin: 3%;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "apparat-cond", sans-serif;
-  border-radius: 8px;
-  padding: 14px 24px;
   border: none;
-  color: var(--primary-color);
-  background-color: white;
-  border: 2px solid var(--primary-color);
+  text-decoration: none;
+  display: inline-block;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: white;
+  margin-block: 0.75rem;
+  border-radius: 7px;
 }
 
-button:hover {
+.btn {
   border: none;
+  text-decoration: none;
+  display: inline-block;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--font-display);
+  text-transform: uppercase;
   background-color: var(--primary-color);
-  color: rgb(255, 255, 255);
-  border-radius: 9px;
-  padding: 16px 26px;
-  box-shadow: 3px 3px 10px #473443, -2px 1px 10px #af6ea5;
+  color: white;
+  margin-block: 0.75rem;
+  border-radius: 7px;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.108) 0px 7px 29px 0px;
+}
+
+.link a {
+  box-shadow: inset 0 0 0 0 #ffffff;
+  color: white;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.link a:hover {
+  box-shadow: inset 300px 0 0 0 #ffffff;
+  color: var(--primary-color);
 }
 
 /* TEXT */
 h1,
 h2,
+h3,
+h4,
 .menu a,
 p {
   color: rgb(0, 0, 0);
@@ -82,10 +132,6 @@ p {
 }
 li {
   color: rgb(0, 0, 0);
-}
-
-h1 {
-  font-size: 35px;
 }
 
 .my_logo {
@@ -101,43 +147,101 @@ a {
 
 /* HEADER */
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5%;
-  padding-bottom: 10%;
-  padding-inline: 8%;
-  margin-bottom: 10%;
-  border-bottom: 1px solid var(--primary-color);
-}
-
 header p {
   font-size: 15px;
 }
-
-.menu {
+header {
   display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 2rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
 }
 
 .menu a {
   text-decoration: none;
   font-family: "bebas-neue", sans-serif;
-  font-size: 22px;
+  font-size: 1rem;
   color: var(--primary-color);
 }
 
-.menu a:hover {
-  color: #fff;
-
-  text-shadow: 3px 3px 10px #b96c93, -2px 1px 10px #985074;
+/* hover på nav */
+a {
+  box-shadow: inset 0 0 0 0 #dcb3cc;
+  transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 100px 0 0 0 #dcb3cc;
+  color: white;
+  padding: 5px;
 }
 
-.menu ul {
-  list-style-type: none;
-  display: flex;
-  gap: 15px;
+/* LINKS */
+.link_container {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* LINK HOVER */
+.link a {
+  box-shadow: inset 0 0 0 0 #ffffff;
+  color: white;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.link a:hover {
+  box-shadow: inset 300px 0 0 0 #ffffff;
+  color: var(--primary-color);
+}
+
+.make_white {
+  color: white;
+  padding: 0px;
   margin: 0px;
+  margin-top: 0.5rem;
 }
+
+/* arrow til links */
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* LINK HOVER REVERSE*/
+.link_reverse a {
+  box-shadow: inset 0 0 0 0 black;
+  color: black;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.link_reverse a:hover {
+  box-shadow: inset 300px 0 0 0 black;
+  color: white;
+}
+
+.arrow_reverse {
+  border: solid rgb(0, 0, 0);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.make_b {
+  color: black;
+}
+
+/* fjern lilla skrift fra links??? */
 
 .my_logo {
   text-align: start;
@@ -150,7 +254,7 @@ header p {
 }
 
 .header_logo h1 {
-  font-size: 20px;
+  font-size: 1.3rem;
   margin: 0px;
 }
 
@@ -159,12 +263,11 @@ main {
   margin: 0 auto;
   max-width: 1250px;
 }
+section {
+  margin-block: 1.5rem;
+}
 
 /* PORTFOLIO SITE STYLING */
-
-section {
-  margin-top: 10%;
-}
 
 figure {
   text-align: center;
@@ -210,15 +313,23 @@ video {
 
 /* CV SITE */
 
-#main_cv {
-  padding-inline: 10%;
+#CV {
+  padding-inline: 3rem;
+}
+
+article {
+  padding-inline: 3rem;
+}
+
+#job_and_work {
+  background-color: var(--primary-color);
 }
 
 section p {
   padding-inline: 10%;
-  padding-top: 5%;
 }
 
+#white
 /* ICON SECTION */
 
 #info p {
@@ -227,7 +338,7 @@ section p {
 
 svg {
   margin: 0px;
-  background-size: cover;
+  margin-right: 20px;
 }
 
 .icon_and_text {
@@ -360,8 +471,7 @@ footer p {
   margin: 0px;
 }
 
-footer h1 {
-  font-size: 20px;
+footer h3 {
   color: var(--primary-color);
 }
 
@@ -369,10 +479,6 @@ footer h1 {
   padding-block: 10px;
   font-style: italic;
   color: var(--primary-color);
-}
-
-.contact {
-  padding-block: 6%;
 }
 
 .contact_text {
@@ -402,11 +508,30 @@ footer h1 {
   }
 
   .menu a {
-    font-size: 25px;
+    font-size: 2rem;
   }
 
   header {
     padding: 5%;
+  }
+  /* FONTS */
+  h1 {
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: var(--font-paragraph);
+    line-height: 1.7;
   }
 
   /* MAIN */
@@ -416,20 +541,10 @@ footer h1 {
     margin: 0px;
   }
 
-  section p {
-    padding-top: 0px;
-    font-size: 20px;
-  }
-
-  .contact {
-    padding: 20px;
-    font-size: 35px;
-  }
-
   #CV {
     text-align: center;
     border-bottom: 2px solid black;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -542,10 +657,6 @@ footer h1 {
   main {
     max-width: fit-content;
   }
-  p,
-  section p {
-    font-size: 25px;
-  }
 
   .left_text {
     font-size: 20px;
@@ -557,10 +668,6 @@ footer h1 {
   }
 
   /* FOOTER */
-  .contact {
-    padding: 20px;
-    font-size: 35px;
-  }
 
   /**************** CV SITE **********************/
   /* HEADER */
