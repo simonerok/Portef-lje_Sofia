@@ -114,12 +114,19 @@ p {
 
 header {
   display: flex;
+  padding: 0.5rem;
   justify-content: space-between;
   align-items: center;
   /*  text-decoration: none; */
+<<<<<<< HEAD
   border-bottom: 1px solid white;
   margin: 0px;
   padding: 0px;
+=======
+  padding: 2rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 2rem;
+>>>>>>> e8e7e28615bde502da2750eb19d8ee1321901215
 }
 
 header p {
