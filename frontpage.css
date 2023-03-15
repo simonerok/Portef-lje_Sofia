@@ -21,16 +21,16 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   letter-spacing: 1px;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.2rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h4 {
@@ -84,23 +84,6 @@ a:hover {
 
 .header_logo h1 {
   cursor: pointer;
-}
-
-/* FONTS */
-h1 {
-  font-family: "bebas-neue", sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-family: "bebas-neue", sans-serif;
-  text-align: center;
-  color: black;
-}
-
-p {
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 .icon_and_text h1 {
@@ -161,9 +144,7 @@ header p {
   text-decoration: none;
 }
 
-.header_logo h1 {
-  font-size: 20px;
-}
+
 
 /* MAIN */
 main {
@@ -196,9 +177,7 @@ footer {
   border-top: 1px solid white;
 }
 
-footer h1 {
-  font-size: 20px;
-}
+
 
 .footerp {
   padding-block: 10px;
@@ -237,6 +216,10 @@ footer h1 {
     grid-template-columns: 1fr 1.5fr;
   }
 
+  .my_logo h1{
+font-size: 1.75rem;
+  }
+  
   /* WHITE */
   .header_logo {
     background-color: white;
@@ -244,10 +227,6 @@ footer h1 {
 
   .my_logo {
     color: var(--primary-color);
-  }
-
-  .header_logo h1 {
-    font-size: 35px;
   }
 
   .logo_text {
