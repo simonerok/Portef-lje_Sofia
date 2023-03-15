@@ -74,22 +74,6 @@ ul li {
   padding-bottom: 5%;
 }
 
-button {
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  height: 2.5rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  background-color: var(--primary-color);
-  color: white;
-  margin-block: 0.75rem;
-  border-radius: 7px;
-}
-
 .btn {
   border: none;
   text-decoration: none;
@@ -152,7 +136,7 @@ header p {
 }
 header {
   display: flex;
-  padding: 0.5rem;
+
   justify-content: space-between;
   align-items: center;
   /*  text-decoration: none; */
@@ -265,10 +249,6 @@ figure {
 }
 
 #redesign_img {
-  padding-top: 5%;
-}
-
-#game_img {
   padding-top: 5%;
 }
 
@@ -499,17 +479,30 @@ footer h3 {
     max-width: none;
   }
 
-  header .my_logo {
-    font-size: 35px;
+  .header_logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    padding: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: var(--font-paragraph);
+    line-height: 1.7;
+  }
+
+  a {
+    font-size: 1.15rem;
   }
 
   .menu a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  header {
-    padding: 5%;
-  }
   /* FONTS */
   h1 {
     font-size: 4.2rem;
@@ -628,14 +621,28 @@ footer h3 {
 /* DESKTOP */
 @media (min-width: 1250px) {
   header .my_logo {
-    font-size: 55px;
+    font-size: 3.25rem;
   }
   .menu a {
-    font-size: 35px;
+    font-size: 2rem;
   }
 
   p {
-    margin-inline: 10%;
+    margin-inline: 15%;
+    font-size: 1.2rem;
+  }
+
+  /* FONTS */
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
   }
 
   .left_text {
@@ -649,6 +656,9 @@ footer h3 {
   figure {
     max-width: 90%;
   }
+  figure img {
+    padding-top: 4%;
+  }
 
   main {
     max-width: fit-content;
@@ -658,17 +668,13 @@ footer h3 {
     font-size: 20px;
   }
 
-  button {
-    font-size: 25px;
-    padding: 20px 30px;
-  }
-
   /* FOOTER */
 
-  /**************** CV SITE **********************/
-  /* HEADER */
-  header {
-    margin-bottom: 8%;
+  /* BUTTON */
+  .btn {
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
   }
 
   /* MAIN */
@@ -679,7 +685,7 @@ footer h3 {
   ul li {
     line-height: 35px;
   }
-
+  /**************** CV SITE **********************/
   .left_text {
     font-size: 25px;
   }
@@ -706,6 +712,21 @@ footer h3 {
   }
 
   /**************** PORTFOLIO SITE **********************/
+
+  #section_1 {
+    margin-block: 3rem;
+  }
+
+  .section_border {
+    margin-bottom: 4rem;
+  }
+
+  .redesign_img img {
+    max-width: 80%;
+  }
+  .game_img img {
+    max-width: 80%;
+  }
 
   /**************** CREATIVE SITE **********************/
 }
