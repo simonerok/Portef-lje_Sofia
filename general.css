@@ -105,7 +105,7 @@ button {
   margin-block: 0.75rem;
   border-radius: 7px;
 }
-
+/* HOVER */
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.108) 0px 7px 29px 0px;
 }
@@ -136,7 +136,7 @@ li {
 
 .my_logo {
   padding: 0%;
-  text-decoration: none;
+  cursor: pointer;
   color: var(--primary-color);
 }
 
@@ -155,7 +155,7 @@ header {
   padding: 0.5rem;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
+  /*  text-decoration: none; */
   padding: 2rem;
   border-bottom: 1px solid var(--primary-color);
 }
@@ -249,13 +249,10 @@ a:hover {
   font-family: "bebas-neue", sans-serif;
 }
 
-.header_logo a {
-  text-decoration: none;
-}
-
 .header_logo h1 {
   font-size: 1.3rem;
   margin: 0px;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -462,6 +459,7 @@ article {
 }
 
 /* FOOTER */
+
 footer {
   text-align: center;
   border-top: 1px solid var(--primary-color);
@@ -493,6 +491,10 @@ footer h3 {
 .svg_linkedIn img {
   max-width: 45px;
   text-align: center;
+}
+
+.header_logo h1 {
+  cursor: pointer;
 }
 
 /* TABLET */
