@@ -90,7 +90,7 @@ ul li {
   border-radius: 7px;
 }
 /* HOVER */
-.btn:hover {
+/* .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.108) 0px 7px 29px 0px;
 }
 
@@ -102,7 +102,7 @@ ul li {
 .link a:hover {
   box-shadow: inset 300px 0 0 0 #ffffff;
   color: var(--primary-color);
-}
+} */
 
 /* TEXT */
 h1,
@@ -157,7 +157,7 @@ nav ul {
 }
 
 /* hover på nav */
-a {
+/* a {
   box-shadow: inset 0 0 0 0 #dcb3cc;
   transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
@@ -165,7 +165,7 @@ a:hover {
   box-shadow: inset 100px 0 0 0 #dcb3cc;
   color: white;
   padding: 5px;
-}
+} */
 
 /* LINKS */
 .link_container {
@@ -174,7 +174,7 @@ a:hover {
 }
 
 /* LINK HOVER */
-.link a {
+/* .link a {
   box-shadow: inset 0 0 0 0 #ffffff;
   color: white;
   transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -182,7 +182,7 @@ a:hover {
 .link a:hover {
   box-shadow: inset 300px 0 0 0 #ffffff;
   color: var(--primary-color);
-}
+} */
 
 .make_white {
   color: white;
@@ -475,6 +475,50 @@ footer h3 {
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
   /* HEADER */
+
+   /* HOVER */
+  a {
+    box-shadow: inset 0 0 0 0 #dcb3cc;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+  }
+  a:hover {
+    box-shadow: inset 300px 0 0 0 #dcb3cc;
+    color: white;
+    padding: 5px;
+  }
+  
+  /* LINKS */
+  .link_container {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  
+  /* HOVER LINKS */
+  .link a {
+    box-shadow: inset 0 0 0 0 #ffffff;
+    color: white;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+  }
+  .link a:hover {
+    box-shadow: inset 350px 0 0 0 #ffffff;
+    color: var(--primary-color);
+  }
+  
+  /* BUTTON HOVER */
+  .btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.108) 0px 7px 29px 0px;
+  }
+  
+  .link a {
+    box-shadow: inset 0 0 0 0 #ffffff;
+    color: white;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+  }
+  .link a:hover {
+    box-shadow: inset 300px 0 0 0 #ffffff;
+    color: var(--primary-color);
+  }
+
   main {
     max-width: none;
   }
@@ -624,6 +668,9 @@ footer h3 {
 
 /* DESKTOP */
 @media (min-width: 1250px) {
+
+
+  /* HEADER */
   header .my_logo {
     font-size: 3.25rem;
   }

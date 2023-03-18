@@ -64,16 +64,7 @@ p {
   font-size: 22px;
 }
 
-/* HOVER */
-a {
-  box-shadow: inset 0 0 0 0 #ffffff;
-  transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
-}
-a:hover {
-  box-shadow: inset 100px 0 0 0 #ffffff;
-  color: var(--primary-color);
-  padding: 5px;
-}
+
 
 .header_logo h1 {
   cursor: pointer;
@@ -183,6 +174,18 @@ footer {
 
 /* TABLET */
 @media (min-width: 700px) {
+/* HOVER */
+
+a:hover {
+  box-shadow: inset 400px 0 0 0 #ffffff;
+  color: var(--primary-color);
+  padding: 5px;
+}
+a {
+  box-shadow: inset 0 0 0 0 #ffffff;
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
   /* HEADER */
   header {
     border: none;
