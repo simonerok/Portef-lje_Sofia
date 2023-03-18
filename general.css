@@ -295,6 +295,10 @@ article {
   background-color: var(--primary-color);
   padding-bottom: 1rem;
 }
+#job_and_work p,
+h3 {
+  color: white;
+}
 
 section p {
   padding-inline: 10%;
@@ -327,7 +331,9 @@ svg {
 .underline {
   border-bottom: 2px solid rgb(0, 0, 0);
 }
-
+.underline_white {
+  border-bottom: 2px solid white;
+}
 /* IMG CV  */
 #pb_cv {
   border: 1px solid black;
@@ -476,7 +482,7 @@ footer h3 {
   /**************** CV SITE **********************/
   /* HEADER */
 
-   /* HOVER */
+  /* HOVER */
   a {
     box-shadow: inset 0 0 0 0 #dcb3cc;
     transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
@@ -486,13 +492,13 @@ footer h3 {
     color: white;
     padding: 5px;
   }
-  
+
   /* LINKS */
   .link_container {
     text-align: center;
     padding-bottom: 5%;
   }
-  
+
   /* HOVER LINKS */
   .link a {
     box-shadow: inset 0 0 0 0 #ffffff;
@@ -503,12 +509,12 @@ footer h3 {
     box-shadow: inset 350px 0 0 0 #ffffff;
     color: var(--primary-color);
   }
-  
+
   /* BUTTON HOVER */
   .btn:hover {
     box-shadow: rgba(0, 0, 0, 0.108) 0px 7px 29px 0px;
   }
-  
+
   .link a {
     box-shadow: inset 0 0 0 0 #ffffff;
     color: white;
@@ -668,8 +674,6 @@ footer h3 {
 
 /* DESKTOP */
 @media (min-width: 1250px) {
-
-
   /* HEADER */
   header .my_logo {
     font-size: 3.25rem;
