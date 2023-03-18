@@ -484,6 +484,11 @@ footer h3 {
   color: black;
 }
 
+#work_exp,
+#white_text,
+.make_white {
+  color: white;
+}
 /* TABLET */
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
