@@ -205,6 +205,9 @@ a:hover {
 }
 
 /* LINK HOVER REVERSE*/
+h3 {
+  color: black;
+}
 .link_reverse a {
   box-shadow: inset 0 0 0 0 black;
   color: black;
@@ -234,6 +237,7 @@ a:hover {
 }
 
 /* MAIN */
+
 main {
   margin: 0 auto;
   max-width: 1250px;
@@ -295,8 +299,7 @@ article {
   background-color: var(--primary-color);
   padding-bottom: 1rem;
 }
-#job_and_work p,
-h3 {
+#job_and_work p h3 {
   color: white;
 }
 
@@ -477,10 +480,21 @@ footer h3 {
   cursor: pointer;
 }
 
+.link_b {
+  color: black;
+}
+
 /* TABLET */
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
   /* HEADER */
+  header {
+    padding-inline: 2rem;
+  }
+
+  header ul {
+    padding-inline: 2rem;
+  }
 
   /* HOVER */
   a {
@@ -500,6 +514,9 @@ footer h3 {
   }
 
   /* HOVER LINKS */
+  .link_reverse h3 {
+    color: black;
+  }
   .link a {
     box-shadow: inset 0 0 0 0 #ffffff;
     color: white;
@@ -675,6 +692,7 @@ footer h3 {
 /* DESKTOP */
 @media (min-width: 1250px) {
   /* HEADER */
+
   header .my_logo {
     font-size: 3.25rem;
   }
