@@ -37,6 +37,7 @@ p {
   font-size: 16px;
   font-family: var(--font-paragraph);
   line-height: 1.7;
+  text-align: left;
 }
 
 body {
@@ -131,6 +132,7 @@ main {
   font-size: 30px;
   padding-bottom: 8%;
   padding-inline: 8%;
+  font-style: italic;
 }
 
 #col_2 {
@@ -205,6 +207,7 @@ a {
   #container_fp {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+ min-height: 60vh;
   }
 
   /* Fonts */
@@ -235,12 +238,13 @@ a {
 
   #col_1 {
     background-color: white;
-    padding-bottom: 20%;
-    padding-top: 10%;
+    display: grid;
+align-content: center;
   }
 
   #img_fp {
-    width: 70%;
+    width: 100%;
+padding-inline: 2rem;
   }
   /* COLOR SIDE */
   .menu {
@@ -262,7 +266,7 @@ a {
     text-align: center;
     border-top: 1px solid var(--primary-color);
     display: flex;
-    padding: 5vh 2rem;
+    padding: 1rem;
     align-items: top;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -300,10 +304,22 @@ footer h3{
   }
 }
 
+@media (min-width: 900px) {
+  #img_fp {
+    width: 100%;
+    padding: 3rem;
+  }
+ }
+
 /* DESKTOP */
 @media (min-width: 1250px) {
   main {
     max-width: none;
+  }
+   #container_fp {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    
   }
 
   /* HEADER */
@@ -319,6 +335,8 @@ footer h3{
 
   #col_1 {
     padding: 0px;
+    display: flex;
+justify-content: center;
   }
 
   /* COLORSIDE */
@@ -329,12 +347,13 @@ footer h3{
   #col_2 p {
     font-size: 50px;
     width: 80%;
+    line-height: 4rem;
   }
+ 
   #img_fp {
-    width: 60%;
-    padding-bottom: 4rem;
+   
+    padding: 5rem;
   }
-
 
 
 }
