@@ -1,4 +1,10 @@
 /* GENERELT */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
 body {
   margin: 0px;
 }
@@ -61,6 +67,7 @@ p {
   font-size: 16px;
   font-family: var(--font-paragraph);
   line-height: 1.7;
+  text-align: left;
 }
 
 ul li {
@@ -109,8 +116,7 @@ h1,
 h2,
 h3,
 h4,
-.menu a,
-p {
+.menu a {
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -136,10 +142,8 @@ header p {
 }
 header {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
-  /*  text-decoration: none; */
   padding: 2rem;
   border-bottom: 1px solid var(--primary-color);
 }
@@ -443,14 +447,45 @@ article {
 
 /* FOOTER */
 
+.flex{
+ margin:0px;
+} 
+
 footer {
   text-align: center;
   border-top: 1px solid var(--primary-color);
+} 
+
+.footer_div{
+  padding-block: 1rem;
+  text-align: center
+
 }
-footer p {
+
+.footer_div p{
+text-align: center
+}
+
+.footerp {
+  padding-block: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+footer h3{
+  padding-block: 0.5rem;
+  font-size: 1.75rem;
+}
+
+footer .svg_linkedIn {
+  display: grid;
+  text-align: left;
+  text-align: center;
   padding: 0px;
   margin: 0px;
 }
+
+
 
 footer h3 {
   color: var(--primary-color);
@@ -493,16 +528,22 @@ footer h3 {
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
   /* HEADER */
-  header {
-    padding-inline: 2rem;
-  }
+header{
+  padding: 0px;
+}
 
   header ul {
-    padding-inline: 2rem;
+    padding: 2rem;
+  }
+
+  .header_logo h1 {
+    padding: 2rem;
+    font-size: 2.15rem;
   }
 
   /* HOVER */
   a {
+  
     box-shadow: inset 0 0 0 0 #dcb3cc;
     transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
   }
@@ -551,11 +592,6 @@ footer h3 {
     max-width: none;
   }
 
-  .header_logo h1 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    padding: 2rem;
-  }
 
   h3 {
     font-size: 1.5rem;
@@ -572,7 +608,7 @@ footer h3 {
   }
 
   .menu a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   /* FONTS */
@@ -653,13 +689,53 @@ footer h3 {
   .underline_white {
     border-bottom: 2px solid white;
   }
-  /*  FOOTER ICON */
+
+
+  /*  FOOTER  */
+   /*FOOTER */
+   .flex {
+    text-align: center;
+    border-top: 1px solid var(--primary-color);
+    display: flex;
+    padding: 5vh 2rem;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+    color: #ddd;
+    margin:0px;
+  }
+  
+  
+  .footer_div {
+    display: grid;
+    place-content: left;
+  }
+  
+  footer p {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+  
+  footer .svg_linkedIn {
+    display: grid;
+    text-align: left;
+    
+    padding: 0px;
+    margin: 0px;
+  }
+}
   .svg_linkedIn img {
     max-width: 60px;
   }
+  #copyright{
+    display: flex;
+justify-content: center;
+
+  }
 
   /**************** PORTFOLIO SITE **********************/
-}
 
 @media (min-width: 800px) {
   /**************** CREATIVE PROJECTS TABLET**********************/
@@ -697,10 +773,12 @@ footer h3 {
 /* DESKTOP */
 @media (min-width: 1250px) {
   /* HEADER */
-
-  header .my_logo {
-    font-size: 3.25rem;
+  header  {
+ padding: 2rem;
   }
+ .header_logo h1 {
+    font-size: 3rem;
+     }
   .menu a {
     font-size: 2rem;
   }
