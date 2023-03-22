@@ -180,6 +180,10 @@ footer h3{
   border: 1px solid white;
   border-radius: 20%;
 }
+footer .svg_linkedIn {
+
+  cursor: pointer;
+}
 
 /* TABLET */
 @media (min-width: 700px) {
@@ -263,7 +267,7 @@ padding-inline: 2rem;
 
   /*FOOTER */
   .flex {
-    text-align: center;
+   
     border-top: 1px solid var(--primary-color);
     display: flex;
     padding: 1rem;
@@ -301,6 +305,7 @@ footer h3{
     text-align: left;
     padding: 0px;
     margin: 0px;
+    cursor: pointer;
   }
 }
 
