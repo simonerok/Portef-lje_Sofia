@@ -80,10 +80,9 @@ ul li {
 }
 
 /* BUTTONS */
-.form{
+.form {
   padding: 1rem;
 }
-
 
 .btn_container {
   text-align: center;
@@ -105,20 +104,6 @@ ul li {
   margin-block: 0.75rem;
   border-radius: 7px;
 }
-/* HOVER */
-/* .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.108) 0px 7px 29px 0px;
-}
-
-.link a {
-  box-shadow: inset 0 0 0 0 #ffffff;
-  color: white;
-  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-.link a:hover {
-  box-shadow: inset 300px 0 0 0 #ffffff;
-  color: var(--primary-color);
-} */
 
 /* TEXT */
 h1,
@@ -169,33 +154,16 @@ nav a {
   color: var(--primary-color);
 }
 
-/* hover på nav */
-/* a {
-  box-shadow: inset 0 0 0 0 #dcb3cc;
-  transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
-}
+/* HOVER */
 a:hover {
-  box-shadow: inset 100px 0 0 0 #dcb3cc;
-  color: white;
-  padding: 5px;
-} */
+  text-decoration: underline;
+}
 
 /* LINKS */
 .link_container {
   text-align: center;
   padding-bottom: 5%;
 }
-
-/* LINK HOVER */
-/* .link a {
-  box-shadow: inset 0 0 0 0 #ffffff;
-  color: white;
-  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-.link a:hover {
-  box-shadow: inset 300px 0 0 0 #ffffff;
-  color: var(--primary-color);
-} */
 
 .make_white {
   color: white;
@@ -219,7 +187,7 @@ a:hover {
 }
 
 /* LINK HOVER REVERSE*/
-h3 {
+/* h3 {
   color: black;
 }
 .link_reverse a {
@@ -240,7 +208,7 @@ h3 {
 }
 .make_b {
   color: black;
-}
+} */
 
 /* fjern lilla skrift fra links??? */
 
@@ -250,7 +218,6 @@ h3 {
   cursor: pointer;
 }
 
-
 /* MAIN */
 
 main {
@@ -258,17 +225,18 @@ main {
   max-width: 1250px;
 }
 
-
-
 section {
   padding: 2rem;
   margin: 0 auto;
 }
 
-#section_1, #section_2, #section_3, #section_4, #section_5 {
- padding-block: 3rem;
+#section_1,
+#section_2,
+#section_3,
+#section_4,
+#section_5 {
+  padding-block: 3rem;
 }
-
 
 /* PORTFOLIO SITE STYLING */
 
@@ -282,7 +250,6 @@ figure {
 
 .section_color {
   background-color: var(--primary-color);
- 
 }
 .section_color h1 {
   color: white;
@@ -301,7 +268,6 @@ video {
   padding-top: 8%;
 }
 
-
 /* CREATIVE PROJECTS SITE */
 #creative_projects {
   padding-inline: 10%;
@@ -316,13 +282,11 @@ video {
   padding-inline: 3rem;
 }
 
-#CV h4{
+#CV h4 {
   text-align: left;
   font-size: 1rem;
- line-height: 1.75rem;
+  line-height: 1.75rem;
 }
-
-
 
 #job_and_work {
   background-color: var(--primary-color);
@@ -331,8 +295,6 @@ video {
 #job_and_work p h3 {
   color: white;
 }
-
-
 
 #white
 /* ICON SECTION */
@@ -360,7 +322,7 @@ svg {
 }
 
 .underline {
-    border-bottom: 2px solid rgba(240, 188, 222, 0.37);
+  border-bottom: 2px solid rgba(240, 188, 222, 0.37);
 }
 
 .underline_white {
@@ -368,9 +330,9 @@ svg {
 }
 /* IMG CV  */
 #pb_cv {
- width: 100%;
- height:80%;
- object-fit: cover;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
   margin-bottom: 10%;
 }
 
@@ -474,22 +436,21 @@ article {
 
 /* FOOTER */
 
-.flex{
- margin:0px;
-} 
+.flex {
+  margin: 0px;
+}
 
 footer {
   text-align: center;
   border-top: 1px solid var(--primary-color);
-} 
+}
 
-.footer_div{
+.footer_div {
   padding-block: 1rem;
   text-align: left;
   display: grid;
   place-content: center;
 }
-
 
 .footerp {
   padding-block: 10px;
@@ -498,7 +459,7 @@ footer {
   font-size: 0.9rem;
 }
 
-footer h3{
+footer h3 {
   padding-block: 0.5rem;
   font-size: 1.75rem;
 }
@@ -510,8 +471,6 @@ footer .svg_linkedIn {
   margin: 0px;
   cursor: pointer;
 }
-
-
 
 footer h3 {
   color: var(--primary-color);
@@ -554,11 +513,12 @@ article {
   padding-inline: 3rem;
 }
 
-.grid_col{
+.grid_col {
   padding-block: 2rem;
 }
 
-section .link, .link_reverse{
+section .link,
+.link_reverse {
   text-align: center;
 }
 
@@ -571,9 +531,9 @@ section .link, .link_reverse{
 @media (min-width: 700px) {
   /**************** CV SITE **********************/
   /* HEADER */
-header{
-  padding: 0px;
-}
+  header {
+    padding: 0px;
+  }
 
   header ul {
     padding: 2rem;
@@ -596,35 +556,8 @@ header{
   }
 
   /* HOVER */
-  a {
-  
-    box-shadow: inset 0 0 0 0 #dcb3cc;
-    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
-  }
   a:hover {
-    box-shadow: inset 300px 0 0 0 #dcb3cc;
-    color: white;
-    padding: 5px;
-  }
-
-  /* LINKS */
-  .link_container {
-    text-align: center;
-    padding-bottom: 5%;
-  }
-
-  /* HOVER LINKS */
-  .link_reverse h3 {
-    color: black;
-  }
-  .link a {
-    box-shadow: inset 0 0 0 0 #ffffff;
-    color: white;
-    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
-  }
-  .link a:hover {
-    box-shadow: inset 350px 0 0 0 #ffffff;
-    color: var(--primary-color);
+    text-decoration: underline;
   }
 
   /* BUTTON HOVER */
@@ -646,7 +579,6 @@ header{
     max-width: none;
   }
 
-
   h3 {
     font-size: 1.5rem;
   }
@@ -656,7 +588,6 @@ header{
     font-family: var(--font-paragraph);
     line-height: 1.7;
   }
-
 
   a {
     font-size: 1.15rem;
@@ -692,7 +623,7 @@ header{
     padding-block: 1rem;
     max-width: 65ch;
     margin: 0 auto;
-   } 
+  }
 
   article {
     padding-block: 5rem;
@@ -735,7 +666,6 @@ header{
   /*  section 2 background */
   #job_and_work {
     background-color: var(--primary-color);
-   
   }
 
   #white_icon {
@@ -758,77 +688,72 @@ header{
     line-height: 30px;
     padding-block: 6%;
   }
- 
- 
-header{
-  margin-bottom: 2rem;
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .btn_container p {
+    text-align: center;
+  }
+  /*  FOOTER  */
+  .flex {
+    text-align: center;
+    border-top: 1px solid var(--primary-color);
+    display: flex;
+    padding: 1rem;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    color: #ddd;
+    margin: 0px;
+  }
+
+  footer h3 {
+    text-align: left;
+    padding-block: 1rem;
+  }
+
+  .footer_div {
+    display: grid;
+    text-align: left;
+  }
+
+  .footer_div p {
+    text-align: left;
+  }
+
+  footer p {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
 }
 
-.btn_container p {
-  text-align: center;
+.svg_linkedIn img {
+  max-width: 60px;
 }
- /*  FOOTER  */
-.flex {
-  text-align: center;
-  border-top: 1px solid var(--primary-color);
+#copyright {
   display: flex;
-  padding: 1rem;
-  align-items: top;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
- 
-  color: #ddd;
-  margin:0px;
+  justify-content: center;
 }
 
-footer h3{
-text-align: left;
-padding-block: 1rem;
+section {
+  padding: 2rem;
+  margin: 0 auto;
 }
 
-
-.footer_div {
-  display: grid;
-  text-align: left;
+section p {
+  padding-block: 1rem;
 }
-
-.footer_div p {
-  text-align: left;
-}
-
 footer p {
   padding: 0px;
   margin: 0px;
   text-align: left;
 }
 
-
-}
-
-  .svg_linkedIn img {
-    max-width: 60px;
-  }
-  #copyright{
-    display: flex;
-justify-content: center;
-
-  }
-
-  section {
-    padding: 2rem;
-    margin: 0 auto;
-  }
-
-  section p {
-    padding-block: 1rem;
-   } 
-   footer p {
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
-  }
-
-  /**************** PORTFOLIO SITE **********************/
+/**************** PORTFOLIO SITE **********************/
 
 @media (min-width: 800px) {
   /**************** CREATIVE PROJECTS TABLET**********************/
@@ -857,7 +782,7 @@ justify-content: center;
   #hb_container img {
     aspect-ratio: 1/1;
   }
-  .hb_img{
+  .hb_img {
     object-fit: fill;
   }
 
@@ -869,12 +794,12 @@ justify-content: center;
 /* DESKTOP */
 @media (min-width: 1250px) {
   /* HEADER */
-  header  {
- padding: 2rem;
+  header {
+    padding: 2rem;
   }
- .header_logo h1 {
+  .header_logo h1 {
     font-size: 3rem;
-     }
+  }
   nav a {
     font-size: 2rem;
   }
@@ -920,7 +845,6 @@ justify-content: center;
     font-size: 20px;
   }
 
-  
   /* BUTTON */
   .btn {
     height: 4rem;
@@ -931,7 +855,7 @@ justify-content: center;
   /* MAIN */
   section p {
     max-width: 75ch;
-   } 
+  }
 
   #info {
     font-size: 25px;
@@ -954,9 +878,9 @@ justify-content: center;
     height: 27px;
   }
 
- .dot_article {
-  padding-block: 7%;
-}
+  .dot_article {
+    padding-block: 7%;
+  }
 
   #work_exp {
     padding-top: 5%;
@@ -967,8 +891,6 @@ justify-content: center;
   }
 
   /**************** PORTFOLIO SITE **********************/
-
- 
 
   .section_border {
     margin-bottom: 4rem;
@@ -991,7 +913,6 @@ justify-content: center;
     margin: 0 auto;
   }
 }
-
 
 /* BURGER */
 li {
@@ -1028,68 +949,67 @@ li {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color:var(--primary-color)
+  background-color: var(--primary-color);
 }
 
 /*BURGER MOBIL */
 @media (max-width: 700px) {
-.hamburger {
-  display: block;
-}
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.nav-menu {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  padding: 1rem;
-  margin: 0;
-  list-style: none;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(-100%);
-  opacity: 0;
-}
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+  }
 
-/* Dette gør at hamburger menuen skifter fra 3 sterger til et kryds når menuen er synlig*/
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
+  /* Dette gør at hamburger menuen skifter fra 3 sterger til et kryds når menuen er synlig*/
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-/* knappen der trykkes på for at toggle frme of tilbage mellem hamburger og kryds*/
-.toggle-btn {
-  margin: 16px 0;
-}
+  /* knappen der trykkes på for at toggle frme of tilbage mellem hamburger og kryds*/
+  .toggle-btn {
+    margin: 16px 0;
+  }
 
-.nav-menu.active {
-  transform: translateY(0);
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #dcb3cc;
-  left:70%;
-  width: 25%;   
-  top:9.5%;
-  text-align: left;
-} 
-.nav-menu.active li a{
-  color:white;
-  z-index: 2;
-  margin: 0px;
-  padding: 0px;
-}
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #dcb3cc;
+    left: 70%;
+    width: 25%;
+    top: 9.5%;
+    text-align: left;
+  }
+  .nav-menu.active li a {
+    color: white;
+    z-index: 2;
+    margin: 0px;
+    padding: 0px;
+  }
 }
