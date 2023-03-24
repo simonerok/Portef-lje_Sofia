@@ -143,8 +143,10 @@ header {
 }
 
 nav ul {
+  list-style-type: none;
   display: flex;
-  gap: 15px;
+  gap: 2.5rem;
+  padding: 0px;
 }
 
 nav a {
@@ -1005,6 +1007,7 @@ li {
     width: 25%;
     top: 9.5%;
     text-align: left;
+    gap:1rem; 
   }
   .nav-menu.active li a {
     color: white;

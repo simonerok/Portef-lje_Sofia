@@ -105,8 +105,10 @@ nav a {
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 15px;
+  gap: 2.5rem;
+  padding: 0px;
 }
+
 .header_logo h1 {
   font-size: 1.3rem;
   margin: 0px;
@@ -449,6 +451,7 @@ li {
     left: 75%;
     top: 9.5%;
     text-align: left;
+    gap:1rem; 
   }
   .nav-menu.active li a {
     font-family: "bebas-neue", sans-serif;
