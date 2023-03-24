@@ -56,12 +56,12 @@ html {
 }
 
 h1,
-.menu a,
+nav a,
 p {
   color: white;
 }
 
-.menu a {
+nav a {
   font-size: 22px;
 }
 
@@ -91,18 +91,18 @@ header p {
   font-size: 15px;
 }
 
-.menu {
+nav {
   display: flex;
   justify-content: center;
 }
 
-.menu a {
+nav a {
   text-decoration: none;
   font-family: "bebas-neue", sans-serif;
   font-size: 15px;
 }
 
-.menu ul {
+nav ul {
   list-style-type: none;
   display: flex;
   gap: 15px;
@@ -251,12 +251,12 @@ align-content: center;
 padding-inline: 2rem;
   }
   /* COLOR SIDE */
-  .menu {
+  nav {
     justify-content: end;
     padding-inline: 10%;
   }
 
-  .menu a {
+  nav a {
     font-size: 1.25rem;
   }
 
@@ -345,7 +345,7 @@ justify-content: center;
   }
 
   /* COLORSIDE */
-  .menu a {
+  nav a {
     font-size: 2rem;
   }
 
@@ -360,5 +360,109 @@ justify-content: center;
     padding: 5rem;
   }
 
+}
 
+  /* BURGER */
+li {
+  /* dette gør at liste elementerne ikke får prikkerne */
+  list-style: none;
+}
+
+/* er vores container til navigationsmenu*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Dette gør at der er et bestemt tidsinterval før animationen sker */
+.nav-link-button {
+  transition: 0.7s ease;
+}
+
+/* Dette er en container hvor vores "bar" ligger i*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+}
+
+/*Dette er vores hamburger menu ikon(de 3 streger) */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/*BURGER MOBIL */
+@media (max-width: 700px) {
+.hamburger {
+  display: block;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Dette gør at hamburger menuen skifter fra 3 sterger til et kryds når menuen er synlig*/
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* knappen der trykkes på for at toggle frme of tilbage mellem hamburger og kryds*/
+.toggle-btn {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  left:75%;  
+  top:9.5%;
+  text-align: left;
+} 
+.nav-menu.active li a{
+  font-family: "bebas-neue", sans-serif;
+font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  line-height: 27px;
+  gap: 15px;
+  color:var(--primary-color);
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+}
 }
